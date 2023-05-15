@@ -20,25 +20,19 @@
                 Jorge Lozano
             </h1>
             <h3 class="txtDeveloper">Developer</h3>
-            <h2 class="title">
-                El email ha sido enviado
-            </h2>
-            <p class="subtitle">
-                Por favor, comprueba la bandeja de entrada para revisar las intrucciones para cambiar la constraseña
-            </p>
-            <div class="email-div">
-                <div class="email-image">
-                    <img src="./icons/email.svg" alt="email">
-                </div>
-            </div>
-            
-            <button class ="primary-button login-button"> Identificarse </button>
-            <p class="resend">
-                <span>
-                    ¿No has recibido el email?
-                </span>
-                <a href = "/"> Reenviar</a>
-            </p>
+            <form action="/" class="form">
+                <label for="email" class="label">Email</label>
+                <input id="email" type="text" placeholder="hola@jorgelozano.dev" class="input input-email"/>
+
+                <label for="password" class="label">Contraseña</label>
+                <input id="password" type="password" placeholder="*************" class="input input-password"/>
+
+                <input type="submit" value="Identificarse" class="primary-button login-button">
+                <a href = "/">¿Olvidaste tu contraseña?</a>
+
+
+            </form>
+            <button class="secundary-button signup-button">Registrate</button>
         </div>
     </div>
 </body>
